@@ -4,9 +4,16 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Jacob Oakley</title>
-    <link rel="stylesheet" type="text/css" href="assets/foundation.css">
-    <link rel="stylesheet" type="text/css" href="assets/foundation-icons.css">
-    <link rel="stylesheet" type="text/css" href="assets/main.css">
+<!-- Foundation -->
+    <link rel="stylesheet" type="text/css" href="assets/foundation/foundation.css">
+    <link rel="stylesheet" type="text/css" href="assets/foundation/foundation-icons.css">
+<!-- Suplemental style sheet -->
+    <link rel="stylesheet" type="text/css" href="assets/sup.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+    
   </head>
   <body>
     <header class="header">
@@ -18,13 +25,22 @@
       </ul>
     </header>
     <hr><a name="about"></a>
+    
+    <div class="your-class">
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+    </div>
+    
+    
+<!--    
     <div class="row">
       <div class="medium-6 columns medium-push-6">
         <h2>Let's Talk About Me</h2>
         <p>I was born to do one thing but, I haven't been able to find a way to get paid sitting on the couch and binge watching Netflix. So, I decided to start studying Frontend Web Development. If you ask my family, they will tell you how technically savvy I am. I don't think I would be bragging to much if I said I am the go to guy when they need someone to hook up their printers. If the word of my family isn't enough keep reading and I might surprise you.</p>
       </div>
       <div class="medium-6 columns medium-pull-6">
-        <img class="thumbnail" src="assets/self_boat_ocean.jpg">
+        <img class="thumbnail" src="assets/pics/self_boat_ocean.jpg">
 
       </div>
     </div>
@@ -94,11 +110,26 @@
         <img class="thumbnail" src="http://placehold.it/550x550">
       </div>
     </div>
-  <hr>
+-->
+  <hr> 
     <div class="row"><a name="site"></a>
       <div class="small-2 large-4 columns text-center" id="footer">&COPY 2016</div>
-      <div class="small-4 large-4 columns text-center" id="initials"><img src="assets/initials.png"></div>
+      <div class="small-4 large-4 columns text-center" id="initials"><img src="assets/pics/initials.png"></div>
       <div class="small-6 large-4 columns text-center" id="footer"><a class="tiny button" href="#"><i class="fi-home"> Home</i></a></div>
     </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        setting-name: setting-value
+      });
+    });
+  </script>
+    
+    
   </body>
 </html>
