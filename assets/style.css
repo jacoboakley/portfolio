@@ -1,0 +1,27 @@
+.header {
+  text-align: center;
+  background: #3498db;
+  background-size: 100%;
+  position: relative;
+  overflow: visible;
+  padding-top: 2.5rem;
+}
+
+.header .headline {
+  color: #ffe;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#initials {
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #3498db;
+}
