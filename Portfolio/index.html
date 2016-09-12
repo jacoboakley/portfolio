@@ -17,16 +17,21 @@
 <!-- Header -->
     <header class="header">
       <h1 class="headline">Jacob Oakley</h1>
-      <ul class="header-subnav">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work" class="is-active">My Work</a></li>
-        <li><a href="#site">Site Info</a></li>
-      </ul>
+      <div class="row">
+        <div class="small-12 columns">
+          <ul class="slider-nav" id="header-nav">
+            <li>About Me</li>
+            <li>What I Do </li>
+            <li>My Networks</li>
+            <li>Gallarey</li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <hr><a name="about"></a>
+    <hr>
 <!-- Carousel -->    
     <div class="row">
-      <div class="single-item small-12 columns">
+      <div class="single-item slider-for small-12 columns">
         <div>
           <div class="medium-6 columns medium-push-6">
             <h2>Let's Talk About Me</h2>
@@ -77,10 +82,10 @@
     </div>
   <hr> 
 <!-- Footer -->
-    <div class="row" id="footer"><a name="site"></a>
-      <div class="small-2 large-4 columns text-center" id="ends">&COPY 2016</div>
-      <div class="small-4 large-4 columns text-center" id="initials"><img src="assets/pics/initials.png"></div>
-      <div class="small-6 large-4 columns text-center" id="ends"><a class="tiny button" href="#"><i class="fi-home"> Home</i></a></div>
+    <div class="row" id="footer">
+      <div class="small-4 large-4 columns" id="ends">&COPY 2016</div>
+      <div class="small-4 large-4 columns" id="initials"><img src="assets/pics/initials.png"></div>
+      <div class="small-4 large-4 columns" id="ends"><a class="tiny button" href="#"><i class="fi-home"> Home</i></a></div>
     </div>
 <!-- Scripts for Slider -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -88,12 +93,17 @@
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 <!-- Call function -->    
     <script type="text/javascript">
-      $(document).ready(function(){
         $('.single-item').slick({
-        // Add settings here
-        dots: true
+          // Add settings here
+          arrows: false,
+          asNavFor: '.slider-nav'
         });
-      });
+        
+        $('.slider-nav').slick({
+          slidesToShow: 4,
+          asNavFor: '.slider-for',
+          focusOnSelect: true
+        });
     </script>
 <!-- Closing body and html -->
   </body>

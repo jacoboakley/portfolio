@@ -1,55 +1,21 @@
 .header {
   text-align: center;
   background: #3498db;
-  background-size: cover;
+  background-size: 100%;
   position: relative;
   overflow: visible;
   padding-top: 2.5rem;
-  padding-bottom: 4.9rem;
 }
 
 .header .headline {
   color: #ffe;
 }
 
-.header-subnav {
-  float: none;
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  bottom: 0;
-  width: 100%;
-}
-
-.header-subnav li {
-  float: none;
-  display: inline-block;
-}
-
-.header-subnav li a {
-  padding: 0.9rem 1rem;
-  font-size: 0.75rem;
-  color: #ffe;
-  text-transform: uppercase;
-  display: block;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: all 0.35s ease-in-out;
-}
-
-.header-subnav li a.is-active {
-  background: #2980b9;
-}
-
-.header-subnav li a:hover {
-  background: #2980b9;
-  transition: all 0.35s ease-in-out;
-}
-
 #footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #initials {
@@ -59,3 +25,8 @@
 .button {
   background-color: #3498db;
 }
+
+.slider-nav {
+  
+}
+
