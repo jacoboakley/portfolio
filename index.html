@@ -14,6 +14,12 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
   </head>
   <body>
+    <div id="hide">
+      <h1>Jacob Oakley</h1>
+      <h2>Professional Frontend</h2>
+      <h2>Web Developer</h2>
+      <button id="button">CURIOUS?</button></div>
+    <div>
 <!-- Header -->
     <header class="header">
       <h1>Jacob Oakley</h1>
@@ -26,7 +32,7 @@
       </div>
     </header>
     <hr>
-<!-- Carousel -->    
+<!-- Carousel -->  
     <div class="row">
       <div class="single-item slider-for small-12 columns">
         <div>
@@ -56,23 +62,23 @@
           <div class="medium-4 columns">
             <h3 >Animate rotate</h3>
             <div  id="wrapper">
-            <img src="assets/pics/spinning-cp.png" onmouseover="this.src='assets/pics/spinning-200.png';" onmouseout="this.src='assets/pics/spinning-cp.png';"/>
-            <p class="invisible">Screenshot from my account on codepen.io. I use HTML and CSS to rotate several nested backgrounds on either thier X or Y axis.</p>
-          </div>
+              <img src="assets/pics/spinning-cp.png" onmouseover="this.src='assets/pics/spinning-200.png';" onmouseout="this.src='assets/pics/spinning-cp.png';"/>
+              <p class="invisible">Screenshot from my account on codepen.io. I use HTML and CSS to rotate several nested backgrounds on either thier X or Y axis.</p>
+            </div>
           </div>
           <div class="medium-4 columns">
             <h3>Canvas</h3>
             <div  id="wrapper">
-            <img class="thumbnail" src="assets/pics/canvas-cp.png" onmouseover="this.src='assets/pics/canvas-200.png';" onmouseout="this.src='assets/pics/canvas-cp.png';"/>
-          <p class="invisible">Screenshot from my account on codepen.io. This is the results of going through a HTML canvas tutorial. I replicated all of the basic shapes, lines, and gradients.</p>
-          </div>
+              <img class="thumbnail" src="assets/pics/canvas-cp.png" onmouseover="this.src='assets/pics/canvas-200.png';" onmouseout="this.src='assets/pics/canvas-cp.png';"/>
+              <p class="invisible">Screenshot from my account on codepen.io. This is the results of going through a HTML canvas tutorial. I replicated all of the basic shapes, lines, and gradients.</p>
+            </div>
           </div>
           <div class="medium-4 columns">
             <h3>Canvas initials</h3>
             <div  id="wrapper">
-            <img class="thumbnail" src="assets/pics/initials-cp.png" onmouseover="this.src='assets/pics/initials-200.png';" onmouseout="this.src='assets/pics/initials-cp.png';"/>
-          <p class="invisible">Screenshot from my account on codepen.io. I used what I have learned from canvas to produce a mock up of a logo with my initials.</p>
-          </div>
+              <img class="thumbnail" src="assets/pics/initials-cp.png" onmouseover="this.src='assets/pics/initials-200.png';" onmouseout="this.src='assets/pics/initials-cp.png';"/>
+              <p class="invisible">Screenshot from my account on codepen.io. I used what I have learned from canvas to produce a mock up of a logo with my initials.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -88,11 +94,13 @@
         <li><a href="https://twitter.com/jacoboakley21" target="_blank"><i class="fi-social-twitter"></i><span>Twitter</span></a></li>
       </ul>
     </div>
+<!-- My Scripts -->    
+     <script src="assets/my-scripts.js"></script> 
 <!-- Scripts for Slider -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
-<!-- Call function -->    
+<!-- Call function for Slider -->    
     <script type="text/javascript">
       $(document).ready(function(){  
         $('.single-item').slick({
